@@ -16,8 +16,8 @@ const Hero = ()=>{
 
     return(
         <>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full overflow-hidden">
-            <div className="p-10 md:p-20 grow">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full min-h-[calc(100vh-6.25rem)] overflow-hidden">
+            <div className="p-10 md:p-20 grow flex flex-col justify-center">
                 <div className="flex flex-row items-center">
                     <div className="w-11 h-px bg-[#c9a84c] mr-2"></div>
                     <p className="text-[#c9a84c] leading-none tracking-wider text-xs">BOSFOR HUKUK & DANIŞMANLIK</p>
