@@ -20,7 +20,7 @@ const Hero = ()=>{
             <div className="p-10 md:p-20 grow">
                 <div className="flex flex-row items-center">
                     <div className="w-11 h-px bg-[#c9a84c] mr-2"></div>
-                    <p className="text-[#c9a84c] leading-none tracking-wider text-sm">BOSFOR HUKUK & DANIŞMANLIK</p>
+                    <p className="text-[#c9a84c] leading-none tracking-wider text-xs">BOSFOR HUKUK & DANIŞMANLIK</p>
                 </div>
                 <h1 className={`${playfair.className} text-5xl my-10 text-[#1a2a5e] font-normal`}>Haklarınızı <span className="italic block text-[#c9a84c]">Kararlılıkla</span> Savunuyoruz</h1>
                 <p className={`${playfair.className} text-xl mb-5`}>İstanbul'un köklü hukuk geleneğinden ilham alan, modern ve güvenilir hukuki danışmanlık hizmeti.</p>
