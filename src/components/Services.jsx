@@ -29,7 +29,7 @@ const Hizmetler = ()=>{
                 <div className="w-11 h-px bg-[#c9a84c] mr-2"></div>
                 <p className="text-[#c9a84c] leading-none tracking-wider text-xs">UZMANLIK ALANLARI</p>
             </div>
-            <h1 className={`${playfair.className} text-[#1a2a5e] text-4xl my-5`}>Hukuki <span className="italic text-[#4a5a7a]">Hizmetlerimiz</span></h1>
+            <h1 className={`${playfair.className} text-[#1a2a5e] text-5xl my-5`}>Hukuki <span className="italic text-[#4a5a7a]">Hizmetlerimiz</span></h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-15">{
                 hizmetler.map((hizmet)=>(
                     <ServiceCard key={hizmet.id} hizmet={hizmet}/>

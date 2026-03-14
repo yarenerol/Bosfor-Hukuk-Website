@@ -28,14 +28,14 @@ const About = ()=>{
                     
                 </div>
             </div>
-            <div className="sağ">
-                <div className="flex flex-row items-center md:py-10">
+            <div className="md:pt-20">
+                <div className="flex flex-row items-center ">
                     <div className="w-11 h-px bg-[#c9a84c] mr-2"></div>
                     <p className="text-[#c9a84c] leading-none tracking-wider text-xs">HAKKIMIZDA</p>
                 </div>
-                <h1 className={`${playfair.className} text-5xl`}>Adalate <span className="italic text-[#4a5a7a]">Adanmış</span><br /> Bir Kariyer</h1>
+                <h1 className={`${playfair.className} text-5xl my-5`}>Adalate <span className="italic text-[#4a5a7a]">Adanmış</span><br /> Bir Kariyer</h1>
                 <p className={`${playfair.className} text-[#4a5a7a] my-10 leading-loose text-lg lg:text-2xl`}>15 yılı aşkın hukuki deneyimimizle, her müvekkilimizin davasını kendi davamız gibi ele alıyoruz. Hukuki süreçlerde şeffaflık, güven ve kararlılık temel değerlerimizdir.</p>
-                <button className={`${raleway.className} bg-[#162050] text-white font-semibold py-2 px-6 hover:bg-[#c9a84c] hover:text-[#162050] duration-300`}>Özgeçmişimizi inceleyin</button>
+                <button className={`${raleway.className} bg-[#162050] text-white font-semibold py-2 px-6 hover:bg-[#c9a84c] hover:text-[#162050] duration-300 mb-10`}>Özgeçmişimizi inceleyin</button>
             </div>
         </div>
         </>
