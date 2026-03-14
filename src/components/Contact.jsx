@@ -55,7 +55,7 @@ const Contact = ()=>{
                     <div className="text-[#E2C07A] border border-pc border-[#E2C07A]/30 p-4 shrink-0 self-start"><FiMail /></div>
                     <div className={`${raleway.className} text-[#E2C07A] mx-4`}>
                         <p>E-posta</p>
-                        <p className="text-white/60">5303211914</p>
+                        <p className="text-white/60">info@bosforhukuk.com</p>
                     </div>
                 </div>
                 <div className="flex flex-row mb-5">
