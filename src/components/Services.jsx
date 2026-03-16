@@ -24,7 +24,7 @@ const hizmetler = [
 const Hizmetler = ()=>{
     return (
         <>
-        <div className="bg-lightcream w-full p-10 md:p-20">
+        <div id="services" className="bg-lightcream w-full p-10 md:p-20">
             <div className="flex flex-row items-center">
                 <div className="w-11 h-px bg-gold mr-2"></div>
                 <p className="text-gold leading-none tracking-wider text-xs">UZMANLIK ALANLARI</p>

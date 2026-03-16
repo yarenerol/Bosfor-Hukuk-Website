@@ -16,7 +16,7 @@ const raleway = Raleway({
 const About = ()=>{
     return (
         <>
-        <div className="bg-cream grid grid-cols-1 gap-20 md:grid-cols-2 p-10 md:p-20 lg:p-35">
+        <div id="about" className="bg-cream grid grid-cols-1 gap-20 md:grid-cols-2 p-10 md:p-20 lg:p-35">
             <div className="flex items-center justify-center ">
                 <div className="bg-darknavy w-full max-w-lg aspect-square relative p-5 lg:m-15">
                     <div className="relative w-full h-full">

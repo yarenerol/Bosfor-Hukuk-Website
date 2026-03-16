@@ -32,3 +32,6 @@ body {
   cursor: default;
 }
 
+html {
+  scroll-padding-top: 6.25rem;
+}

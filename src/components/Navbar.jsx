@@ -20,7 +20,7 @@ const Navbar = () => {
             
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center">
-                <Link href="#hero" className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
+                <Link href="/#hero" className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
                     Ana sayfa
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
                 </Link>
@@ -28,15 +28,15 @@ const Navbar = () => {
                     Hakkımızda
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
                 </Link>
-                <a className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
+                <Link href="/#services" className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
                     Hizmetler
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
-                </a>
+                </Link>
                 <a className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
                     Blog
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
                 </a>
-                <button className="font-raleway ml-5 bg-navy text-white px-7 py-1 cursor-pointer hover:bg-gold duration-300">İletişim</button>
+                <Link href="/#contact" className="font-raleway ml-5 bg-navy text-white px-7 py-1 cursor-pointer hover:bg-gold duration-300">İletişim</Link>
             </nav>
 
             {/* Hamburger Butonu */}
@@ -52,9 +52,7 @@ const Navbar = () => {
 
         {/* Mobile Panel */}
         <div className={`fixed top-0 right-0 h-full w-full bg-navy z-40 flex flex-col justify-center items-center gap-10 transition-transform duration-500 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-            <a className="font-raleway text-white text-2xl hover:text-gold duration-300" onClick={() => setIsOpen(false)}>Ana sayfa</a>
             <a className="font-raleway text-white text-2xl hover:text-gold duration-300" onClick={() => setIsOpen(false)}>Hakkımızda</a>
-            <a className="font-raleway text-white text-2xl hover:text-gold duration-300" onClick={() => setIsOpen(false)}>Hizmetler</a>
             <a className="font-raleway text-white text-2xl hover:text-gold duration-300" onClick={() => setIsOpen(false)}>Blog</a>
             <button className="font-raleway bg-gold text-navy px-10 py-3 text-lg font-semibold hover:bg-white duration-300" onClick={() => setIsOpen(false)}>İletişim</button>
         </div>

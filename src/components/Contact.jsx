@@ -36,7 +36,7 @@ const Contact = ()=>{
     }
     return(
         <>
-        <div className="bg-darknavy p-10 md:p-20">
+        <div id="contact" className="bg-darknavy p-10 md:p-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 ">
                 <div className="sol">
                     <div className="flex flex-row items-center">
