@@ -5,6 +5,7 @@ import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
 import Link from "next/link"
 import emailjs from '@emailjs/browser'
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const playfair = Playfair_Display({
     subsets: ['latin'], 
@@ -36,9 +37,16 @@ const Contact = ()=>{
     }
     return(
         <>
-        <div id="contact" className="bg-darknavy p-10 md:p-20">
+        <div
+        
+        id="contact" className="bg-darknavy p-10 md:p-20 ">
             <div className="grid grid-cols-1 lg:grid-cols-2 ">
-                <div className="sol">
+                <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="sol">
                     <div className="flex flex-row items-center">
                         <div className="w-11 h-px bg-gold mr-2"></div>
                         <p className="font-raleway text-gold leading-none tracking-wider text-xs">İletişim</p>
@@ -67,8 +75,13 @@ const Contact = ()=>{
                         </div>
                     </div>
                     
-                </div>
-                <div className="py-10 lg:px-20">
+                </motion.div>
+                <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: false }} 
+                className="py-10 lg:px-20">
                     <form onSubmit={sendEmail} className="">
                         <div className="grid grid-cols-2 gap-1">
                         <input type="text" name="name" required placeholder="*Adınız" className="border border-px bg-lightnavy border-white/30 p-3 text-white/30 mr-3 mb-3" />
@@ -86,7 +99,7 @@ const Contact = ()=>{
                         {status === 'success' && <p className="font-raleway text-gold text-sm mt-3">✓ Mesajınız başarıyla iletildi.</p>}
                         {status === 'error' && <p className="font-raleway text-red-400 text-sm mt-3">✗ Bir hata oluştu, lütfen tekrar deneyin.</p>}
                     </form>
-                </div>
+                </motion.div>
             </div>
             <div className="w-full h-100 md:h-96">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.130642913045!2d29.002527975284742!3d41.066136871342394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab65152bb7c53%3A0x19b99e4f49be7ae0!2zRXNlbnRlcGUsIFnEsWxkxLF6IFBvc3RhIENkLiBObzoxNCwgMzQzOTQgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1773491975916!5m2!1str!2str" width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

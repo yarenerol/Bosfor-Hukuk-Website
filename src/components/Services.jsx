@@ -1,5 +1,8 @@
+'use client'
+
 import { Playfair_Display, Raleway } from "next/font/google"
 import ServiceCard from "./ServiceCard"
+import { motion } from "framer-motion"
 
 
 const playfair = Playfair_Display({
@@ -24,7 +27,12 @@ const hizmetler = [
 const Hizmetler = ()=>{
     return (
         <>
-        <div id="services" className="bg-lightcream w-full p-10 md:p-20">
+        <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false }}
+        id="services" className="bg-lightcream w-full p-10 md:p-20">
             <div className="flex flex-row items-center">
                 <div className="w-11 h-px bg-gold mr-2"></div>
                 <p className="text-gold leading-none tracking-wider text-xs">UZMANLIK ALANLARI</p>
@@ -35,7 +43,7 @@ const Hizmetler = ()=>{
                     <ServiceCard key={hizmet.id} hizmet={hizmet}/>
                 ))
             }</div>
-        </div>
+        </motion.div>
         </>
     )
 

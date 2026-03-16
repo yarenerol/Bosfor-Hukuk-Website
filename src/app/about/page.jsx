@@ -1,6 +1,9 @@
+'use client'
+
 import { Playfair_Display, Raleway } from "next/font/google" 
 import Image from "next/image"
 import { FiShield, FiClock, FiUsers } from "react-icons/fi"
+import { motion } from "framer-motion"
 
 const playfair = Playfair_Display({
     subsets: ['latin'], 
@@ -16,15 +19,30 @@ const raleway = Raleway({
 export default function About() {
 return (
     <>
-    <div className="title bg-darknavy p-10 md:p-20">
+    <motion.div
+    initial={{ opacity: 0, x: 30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="title bg-darknavy p-10 md:p-20">
         <div className="flex flex-row items-center ">
             <div className="w-11 h-px bg-gold mr-2"></div>
             <p className="text-gold font-raleway leading-none tracking-wider text-xs md:text-sm">HAKKIMIZDA</p>
         </div>
         <h1 className="font-playfair font-bold text-white text-3xl md:text-5xl my-5">Av. Mustafa Berkay <span className="italic text-gold">Yılmaz</span></h1>
-    </div>
-    <div className="about bg-cream p-10 md:p-20 grid grid-cols-1 md:grid-cols-2">
-        <div className="flex items-start justify-center">
+    </motion.div>
+    <motion.div
+    initial={{ opacity: 0, x: 30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="about bg-cream p-10 md:p-20 grid grid-cols-1 md:grid-cols-2">
+        <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex items-start justify-center">
             <div className="bg-navy w-full max-w-lg aspect-square relative p-5 lg:m-15">
                 <div className="relative w-full h-full">
                     <Image src="/MBerkayYilmaz.jpeg" alt="Mustafa Berkay Yılmaz" fill className="object-cover" />
@@ -34,8 +52,13 @@ return (
                     <span className="font-raleway block text-center text-xs text-darknavy">Kurucu Avukat</span>
                 </div>
             </div>
-        </div>
-        <div className="">
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="">
                 <div className="flex flex-row items-center mt-20 md:mt-0">
                     <div className="w-11 h-px bg-gold mr-2"></div>
                     <p className="text-gold leading-none tracking-wider text-xs">HAKKIMIZDA</p>
@@ -49,9 +72,14 @@ return (
                 <p className="font-playfair text-[#4a5a7a] mb-5 leading-loose text-lg lg:text-xl">2023 yılından bu yana özel sektörde danışman ve avukat olarak çalışmaktadır. İcra ve iflas hukuku, borçlar hukuku, iş hukuku, ticaret hukuku, şirketler hukuku ve ceza hukuku alanlarında uzmandır.</p>
                 <p className="font-playfair text-[#4a5a7a] mb-5 leading-loose text-lg lg:text-xl">Mustafa Berkay Yılmaz, iyi derecede İngilizce konuşmaktadır. Ayrıca bilirkişilik eğitimine, iş sağlığı ve güvenliği eğitimine ve e-iç ve e-dış ticaret uzmanlığı sertifikasına sahiptir.</p>
                 
-            </div>
-    </div>
-    <div className="education bg-white p-10 md:p-20">
+            </motion.div>
+    </motion.div>
+    <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="education bg-white p-10 md:p-20">
         <div className="flex flex-row items-center ">
             <div className="w-11 h-px bg-gold mr-2"></div>
             <p className="text-gold font-raleway leading-none tracking-wider text-xs md:text-sm">Geçmiş</p>
@@ -143,8 +171,13 @@ return (
         </div>
 
 
-    </div>
-    <div className="values bg-darknavy p-10 md:p-20" style={{
+    </motion.div>
+    <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="values bg-darknavy p-10 md:p-20" style={{
                     backgroundImage: `linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px)`,
                     backgroundSize: '50px 50px'
                 }}>
@@ -170,7 +203,7 @@ return (
                 <p className="text-fume text-lg font-raleway">Her müvekkilimizin ihtiyacını dinler, kişisel ve özgün çözümler üretiriz.</p>
             </div>
         </div>
-    </div>
+    </motion.div>
     </>
 )
 }

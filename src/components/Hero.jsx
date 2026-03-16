@@ -1,5 +1,8 @@
+'use client'
+
 import { Playfair_Display, Raleway } from "next/font/google"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const playfair = Playfair_Display({
     subsets: ['latin'], 
@@ -16,8 +19,13 @@ const Hero = ()=>{
 
     return(
         <>
-        <div id="hero" className="grid grid-cols-1 md:grid-cols-2 w-full min-h-[calc(100vh-6.25rem)] overflow-hidden">
-            <div className="p-10 md:p-20 grow flex flex-col justify-center">
+        <div id="hero" className="grid grid-cols-1 md:grid-cols-2 w-full min-h-[calc(100vh-6.25rem)]">
+            <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="p-10 md:p-20 grow flex flex-col justify-center">
                 <div className="flex flex-row items-center">
                     <div className="w-11 h-px bg-gold mr-2"></div>
                     <p className="text-gold leading-none tracking-wider text-xs">BOSFOR HUKUK & DANIŞMANLIK</p>
@@ -29,8 +37,13 @@ const Hero = ()=>{
                     <button className="bg-white mx-5 text-navy py-2 px-6 border border-navy font-raleway hover:cursor-pointer hover:text-gold hover:border-gold duration-300">Hizmetlerimiz</button>
                 </div>
 
-            </div>
-            <div className="hidden md:flex flex-col bg-darknavy p-20 grow overflow-hidden items-center justify-center" 
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false }}
+            className="hidden md:flex flex-col bg-darknavy p-20 grow overflow-hidden items-center justify-center" 
                 style={{
                     backgroundImage: `linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px)`,
                     backgroundSize: '50px 50px'
@@ -42,7 +55,7 @@ const Hero = ()=>{
                 </div>
                 <div className="w-px h-20 bg-linear-to-b from-transparent via-gold to-transparent my-10"></div>
             <p className="font-playfair italic font-semibold text-white/30 text-center">&quot;İki kıtayı birleştiren köprü gibi, sizi hukuka bağlıyoruz.&quot;</p>
-            </div>
+            </motion.div>
         </div>
         </>
     )
