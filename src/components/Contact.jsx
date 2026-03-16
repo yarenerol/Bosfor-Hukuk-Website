@@ -71,13 +71,13 @@ const Contact = ()=>{
                 <div className="py-10 lg:px-20">
                     <form onSubmit={sendEmail} className="">
                         <div className="grid grid-cols-2 gap-1">
-                        <input type="text" name="name" required placeholder="*Adınız" className="border border-px border-white/30 p-3 text-white/30 mr-3 mb-3 " />
-                        <input type="text" name="surname" required placeholder="*Soyadınız" className="border border-px border-white/30 p-3 text-white/30 mb-3" />
+                        <input type="text" name="name" required placeholder="*Adınız" className="border border-px bg-[#182345] border-white/30 p-3 text-white/30 mr-3 mb-3 " />
+                        <input type="text" name="surname" required placeholder="*Soyadınız" className="border border-px bg-[#182345] border-white/30 p-3 text-white/30 mb-3" />
                         </div>
                         
-                        <input type="email" name="email" required placeholder="*E-posta adresiniz" className="border border-px border-white/30 p-3 text-white/30 block w-full mb-3" />
-                        <input type="tel" name="phone" required placeholder="*Telefon numaranız" className="border border-px border-white/30 p-3 text-white/30 block w-full mb-3" />
-                        <textarea name="message" id="" required placeholder="*Hukuki sorunuzu kısaca açıklayın..."  className="border border-px border-white/30 p-3 text-white/30 placeholder:text-white/20 min-h-30 block w-full mb-3"></textarea>
+                        <input type="email" name="email" required placeholder="*E-posta adresiniz" className="border border-px bg-[#182345] border-white/30 p-3 text-white/30 block w-full mb-3" />
+                        <input type="tel" name="phone" required placeholder="*Telefon numaranız" className="border border-px bg-[#182345] border-white/30 p-3 text-white/30 block w-full mb-3" />
+                        <textarea name="message" id="" required placeholder="*Hukuki sorunuzu kısaca açıklayın..."  className="border border-px bg-[#182345] border-white/30 p-3 text-white/30 placeholder:text-white/20 min-h-30 block w-full mb-3"></textarea>
 
                         <p className={`${raleway.className} text-white/30 text-xs`}>
                         <Link href="/kvkk" className="underline hover:text-[#c9a84c] duration-300">*KVKK metnimizi okumak için tıklayın.</Link>

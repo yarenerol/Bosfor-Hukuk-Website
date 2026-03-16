@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="tr" suppressHydrationWarning>
       <body>
         <Navbar />
-        {children}
+        <div className="pt-25">{children}</div>
         <Footer />
       </body>
     </html>

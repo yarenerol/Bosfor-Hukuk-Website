@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Services />
-      <About />
-      <Contact />
+      <Hero id="hero" />
+      <Services id="services" />
+      <About id="about" />
+      <Contact id="contact" />
     </>
   );
 }
