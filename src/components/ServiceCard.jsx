@@ -14,11 +14,11 @@ const raleway = Raleway({
 const ServiceCard = ({hizmet})=>{
     return(
         <>
-        <div className="bg-white border border-[#1a2a5e]/10 p-10 hover:-translate-y-1 hover:shadow-xl duration-400 relative group">
-        <div className="absolute left-0 top-0 w-0.5 h-0 bg-[#c9a84c] group-hover:h-full transition-all duration-400"></div>
-            <h1 className={`${playfair.className} text-8xl text-[#1a2a5e]/5 `}>{hizmet.id}</h1>
-            <h2 className={`${playfair.className} text-3xl my-5 text-[#1a2a5e]`}>{hizmet.service}</h2>
-            <p className={`${raleway.className} text-[#4a5a7a]`}>{hizmet.desc}</p>
+        <div className="bg-white border border-darknavy/10 p-10 hover:-translate-y-1 hover:shadow-xl duration-400 relative group">
+        <div className="absolute left-0 top-0 w-0.5 h-0 bg-gold group-hover:h-full transition-all duration-400"></div>
+            <h1 className="font-playfair text-8xl text-darknavy/5">{hizmet.id}</h1>
+            <h2 className="font-playfair text-3xl my-5 text-darknavy">{hizmet.service}</h2>
+            <p className="font-playfair text-lightblue`">{hizmet.desc}</p>
         </div>
         </>
     )
