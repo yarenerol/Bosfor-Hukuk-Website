@@ -32,10 +32,10 @@ const Navbar = () => {
                     Hizmetler
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
                 </Link>
-                <a className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
+                <Link href="/blog" className="font-raleway mx-5 hover:text-gold duration-300 relative cursor-pointer group">
                     Blog
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
-                </a>
+                </Link>
                 <Link href="/#contact" className="font-raleway ml-5 bg-navy text-white px-7 py-1 cursor-pointer hover:bg-gold duration-300">İletişim</Link>
             </nav>
 
