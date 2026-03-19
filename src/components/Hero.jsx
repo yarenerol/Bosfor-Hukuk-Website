@@ -3,6 +3,7 @@
 import { Playfair_Display, Raleway } from "next/font/google"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const playfair = Playfair_Display({
     subsets: ['latin'], 
@@ -33,8 +34,8 @@ const Hero = ()=>{
                 <h1 className="font-playfair text-5xl my-10 text-navy font-normal">Haklarınızı <span className="italic block text-gold">Kararlılıkla</span> Savunuyoruz</h1>
                 <p className="font-playfair text-xl mb-5">İstanbul&apos;un köklü hukuk geleneğinden ilham alan, modern ve güvenilir hukuki danışmanlık hizmeti.</p>
                 <div className="flex flex-row">
-                    <button className="bg-navy mr-5 text-white font-bold py-2 px-6 font-raleway hover:bg-gold hover:text-navy hover:cursor-pointer duration-300">İletişime geçin</button>
-                    <button className="bg-white mx-5 text-navy py-2 px-6 border border-navy font-raleway hover:cursor-pointer hover:text-gold hover:border-gold duration-300">Hizmetlerimiz</button>
+                    <Link href="/#contact" className="bg-navy mr-5 text-white font-bold py-2 px-6 font-raleway hover:bg-gold hover:text-navy hover:cursor-pointer duration-300">İletişime geçin</Link>
+                    <Link href="/#services" className="bg-white mx-5 text-navy py-2 px-6 border border-navy font-raleway hover:cursor-pointer hover:text-gold hover:border-gold duration-300">Hizmetlerimiz</Link>
                 </div>
 
             </motion.div>
