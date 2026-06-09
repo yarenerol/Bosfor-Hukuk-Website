@@ -48,7 +48,7 @@ const About = ()=>{
                     <p className="text-gold leading-none tracking-wider text-xs">HAKKIMIZDA</p>
                 </div>
                 <h1 className="font-playfair text-5xl my-5">Adalate <span className="italic text-fume">Adanmış</span><br /> Bir Kariyer</h1>
-                <p className="font-playfair text-fume my-10 leading-loose text-lg lg:text-2xl">15 yılı aşkın hukuki deneyimimizle, her müvekkilimizin davasını kendi davamız gibi ele alıyoruz. Hukuki süreçlerde şeffaflık, güven ve kararlılık temel değerlerimizdir.</p>
+                <p className="font-playfair text-fume my-10 leading-loose text-lg lg:text-2xl">Uzun yıllara dayanan hukuki deneyimimizle, her müvekkilimizin davasını kendi davamız gibi ele alıyoruz. Hukuki süreçlerde şeffaflık, güven ve kararlılık temel değerlerimizdir.</p>
                 <Link href="/about" className="font-raleway bg-darknavy text-white font-semibold py-3 px-6 hover:bg-gold hover:text-darknavy duration-300 mb-10">Özgeçmişimizi inceleyin</Link>
             </motion.div>
         </div>
