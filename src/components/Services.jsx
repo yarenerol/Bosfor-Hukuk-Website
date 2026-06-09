@@ -17,12 +17,12 @@ const raleway = Raleway({
 })
 
 const hizmetler = [
-    {id: 1, service: "Aile Hukuku", desc: "Boşanma, velayet, nafaka ve aile içi hukuki sorunlarınızda uzman danışmanlık hizmeti sunuyoruz."},
+    {id: 1, service: "Ceza Hukuku", desc: "Ceza davalarında etkin savunma stratejileri ile haklarınızı en üst düzeyde koruyoruz."},
     {id: 2, service: "İş & Ticaret Hukuku", desc: "Şirket kuruluşu, sözleşme hazırlama ve ticari uyuşmazlıklarda profesyonel hukuki destek."},
-    {id: 3, service: "Ceza Hukuku", desc: "Ceza davalarında etkin savunma stratejileri ile haklarınızı en üst düzeyde koruyoruz."},
-    {id: 4, service: "Gayrimenkul Hukuku", desc: "Devlet kurumlarına karşı hak arama süreçlerinde deneyimli ve kararlı temsil."},
-    {id: 5, service: "İdare Hukuku", desc: "Devlet kurumlarına karşı hak arama süreçlerinde deneyimli ve kararlı temsil."},
-    {id: 6, service: "Miras Hukuku", desc: "Miras planlaması, vasiyet düzenleme ve miras uyuşmazlıklarında güvenilir rehberlik."},
+    {id: 3, service: "Gayrimenkul Hukuku", desc: "Taşınmaz alım-satım, kira uyuşmazlıkları ve imar sorunlarında güvenilir hukuki çözümler sunuyoruz."},
+    {id: 4, service: "İdare Hukuku", desc: "Devlet kurumlarına karşı hak arama süreçlerinde deneyimli ve kararlı temsil."},
+    {id: 5, service: "Miras Hukuku", desc: "Miras planlaması, vasiyet düzenleme ve miras uyuşmazlıklarında güvenilir rehberlik."},
+    {id: 6, service: "Aile Hukuku", desc: "Boşanma, velayet, nafaka ve aile içi hukuki sorunlarınızda uzman danışmanlık hizmeti sunuyoruz."},
 ]
 const Hizmetler = ()=>{
     return (
